@@ -1,0 +1,21 @@
+
+    
+
+    .note{
+        border: 1px solid rgba(136, 131, 131, 0.281);
+        border-radius: 10px;
+        height: 100%;
+        cursor: pointer;
+        .btn{
+            color: white;
+            background-color: #FBBC04;
+            padding: 5px;
+            
+        }
+    }
+    .note:hover{
+       
+        box-shadow: 0 0 4px rgba(136, 131, 131, 0.281);
+    }
+
+
