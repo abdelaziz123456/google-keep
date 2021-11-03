@@ -1,4 +1,4 @@
-import { addNote,removeNote,clearNotes } from "../actions/types";
+import { addNote,removeNote,clearNotes,editNote } from "../actions/types";
 
 const initState=
    [
@@ -24,6 +24,11 @@ const Notes=(state=initState,action)=>{
     }else if(action.type===clearNotes){
         notes=[];
         return notes
+    }else if(action.type===editNote){
+       notes= state.filter(note=>note.id!==action.id);
+        return [...notes,{id:action.id,header:action.header,text:action.text}]
+       
+       
     }else{
         return state
     }

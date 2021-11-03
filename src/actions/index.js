@@ -1,4 +1,4 @@
-import { addNote,removeNote,clearNotes } from "./types";
+import { addNote,removeNote,clearNotes,editNote } from "./types";
 export const add_Note=(header,text)=>{
     const action={
         type:addNote,
@@ -13,6 +13,17 @@ export const remove_Note=(id)=>{
     const action={
         type:removeNote,
         id:id,
+    }
+    return action
+};
+export const edit_Note=(id,header,text)=>{
+    const action={
+        type:editNote,
+        id:id,
+        header:header,
+        text:text
+
+       
     }
     return action
 };

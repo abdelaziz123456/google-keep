@@ -9,7 +9,10 @@ export default function Form() {
     const submitHandler=(e)=>{
         e.preventDefault();
         
-        dispatch(add_Note(titleRef.current.value,subjectRef.current.value))
+        dispatch(add_Note(titleRef.current.value,subjectRef.current.value));
+        titleRef.current.value='';
+        subjectRef.current.value=''
+
     }
     return (
         <div className='form-container my-5 d-flex justify-content-center'>

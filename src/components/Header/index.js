@@ -29,13 +29,24 @@ export default function Header(props) {
                 Keep
             </h4>
 
+            
             {   
-            props.isDark ? <button onClick={props.modeHandler} className='btn ms-3 '>Light Mode <WbSunny/></button> : <button onClick={props.modeHandler} className='btn ms-3'>Dark Mode <Brightness2/></button>
+            props.isDark ? <button onClick={props.modeHandler} className='btn ms-3 '>Light  <WbSunny/></button> : <button onClick={props.modeHandler} className='btn ms-3'>Dark  <Brightness2/></button>
 
             }
+           
                
             
             </div>
+
+
+
+           
+
+            
+
+
+            
 
 
             
@@ -43,9 +54,8 @@ export default function Header(props) {
 
 
             <div className='left'>
-                <span>
-                <Refresh/>
-                </span>
+
+                
 
                 <span>
                 <ViewStream/>
