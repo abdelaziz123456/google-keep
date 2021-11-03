@@ -1,13 +1,14 @@
 import React from 'react';
 import './index.scss';
 
-import { Apps, Refresh,  Settings, ViewStream } from '@material-ui/icons';
+import { Apps, Refresh,  Settings, ViewStream, WbSunny, Brightness2 } from '@material-ui/icons';
 import userImage from '../../images/user.png';
+import { darken } from '@material-ui/core';
 
 
 
 
-export default function Header() {
+export default function Header(props) {
     const logo=<img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="logo" />
 
 
@@ -27,6 +28,13 @@ export default function Header() {
             <h4>
                 Keep
             </h4>
+
+            {   
+            props.isDark ? <button onClick={props.modeHandler} className='btn ms-3 '>Light Mode <WbSunny/></button> : <button onClick={props.modeHandler} className='btn ms-3'>Dark Mode <Brightness2/></button>
+
+            }
+               
+            
             </div>
 
 

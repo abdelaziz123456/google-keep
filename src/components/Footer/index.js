@@ -5,7 +5,7 @@ import './index.scss';
 
 const Footer = () => {
     return (
-        <div className='footer text-center mt-4 py-4'>
+        <div className='footer text-center  py-4'>
             <h6>Designed By Abdelaziz</h6>
             <h6>@Copyright All rights reserved</h6>
             <div className="icons my-1">

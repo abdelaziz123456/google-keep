@@ -6,4 +6,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+   
+}
+
+.app-dark{
+    color: white !important;
+    h4,svg,.btn{
+        color: white !important;
+    }
+    background-color: #181A1B !important;
+    .form-control{
+        background-color:#181A1B !important ;
+        color: white !important;
+    }
+
 }
