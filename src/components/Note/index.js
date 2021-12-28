@@ -58,10 +58,16 @@ function Note (props){
             <div>
 
           <Modal isOpen={modal} toggle={toggle} centered={true}  style={{maxWidth: '1200px', width: '80%'}}>
-          
+          <div className='d-flex justify-content-end  '>
+              <button className="btn" onClick={toggle} >
+                 <h5 >X</h5> 
+              </button>
+            </div>
                         <ModalBody className={'invest-content'}>
                         <div className='form-container my-5 d-flex justify-content-center'>
             <form onSubmit={editHandler} className="form px-5 d-flex flex-column">
+
+            
 
 
                 <input type="text" className="form-control title" placeholder="Title" ref={titleRef}  required/>

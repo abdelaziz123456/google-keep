@@ -15,6 +15,9 @@ export default function Form() {
 
     }
     return (
+        
+
+        
         <div className='form-container my-5 d-flex justify-content-center'>
             <form onSubmit={submitHandler} className="form px-5 d-flex flex-column">
 
@@ -36,6 +39,7 @@ export default function Form() {
 
             </form>
         </div>
+        
     )
 }
 
